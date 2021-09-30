@@ -1,0 +1,19 @@
+{
+  "name": "h7_readme_generator",
+  "version": "1.0.0",
+  "description": "readme generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mollymoo002/H7_README_Generator.git"
+  },
+  "author": "Molly Singmaster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mollymoo002/H7_README_Generator/issues"
+  },
+  "homepage": "https://github.com/mollymoo002/H7_README_Generator#readme"
+}
