@@ -51,7 +51,7 @@ SOFTWARE.
 
 ## Questions
 
-[![Photo of Molly](media/Molly-photo.jpg)]
+![Photo of Molly](media/Molly-photo.jpg)
 
 - Github username: mollymoo002
 - Email: mollysingmaster@gmail.com
