@@ -19,48 +19,48 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 const questions = [
+    // creates each question the user can answer, if validate is in that section, that means the question is required to have an answer
       {
         type: 'input',
         message: 'Please provide the project title',
         name: 'title',
         // checked to make sure the user provided a value for the project title
         validate: (value)=> {if (value) {return true} else {return 'Please enter a project title'}},
-        default: 'Project Title',
       },
       {
         type: 'input',
         message: 'Please provide a brief description of your project',
-        name: 'Description',
+        name: 'description',
         validate: (value)=> {if (value) {return true} else {return 'Please enter a project description'}},
         default: 'Project Description',
       },
       {
         type: 'input',
         message: 'Please include a table of contents (optional)',
-        name: 'Table',
+        name: 'table',
       },
       {
         type: 'input',
         message: 'How to install the application (optional)',
-        name: 'Installation',
+        name: 'installation',
       },
       {
         type: 'input',
         message: 'Instructions for using the app',
         validate: (value)=> {if (value) {return true} else {return 'Please enter instructions'}},
-        name: 'Usage',
+        name: 'usage',
       },
       {
         type: 'list',
         message: 'License information (optional)',
-        name: 'License',
+        name: 'license',
         choices: ['The MIT License', 'The GPL license', 'Apache license', 'GNU license', 'N/A'],
       },
       {
         type: 'input',
         message: 'Contributors',
         validate: (value)=> {if (value) {return true} else {return 'Please enter contributors'}},
-        name: 'Contributing',
+        name: 'contributing',
       },
       {
         type: 'input',
@@ -72,7 +72,6 @@ const questions = [
         message: 'Please enter Github username',
         name: 'username',
         validate: (value)=> {if (value) {return true} else {return 'Please enter your username'}},
-        default: 'mollymoo002',
       },
       {
         type: 'input',
@@ -82,6 +81,7 @@ const questions = [
       },
 ];
 inquirer.prompt(questions)
+// this takes all of the object names to insert them into the template I created below
 .then (({
     title,
     description,
@@ -95,44 +95,31 @@ inquirer.prompt(questions)
     email
 }) => {
     // README template
-const template = `${title}
-    *[description][#description]
-    *[table][#table of contents]
-    *[installation][#installation]
-    *[usage][#usage]
-    *[license][#license]
-    *[contributing][#contributors]
-    *[tests][#tests]
+const template = `##$ {title}
 
-    ## Description
-    ${description}
-
-    ## Table of Contents
-    ${table}
-
-    ## Installation
-    ${installation}
-
-    ## Usage
-    ${usage}
-
-    ## License
-    ${license}
-
-    ## Credits
-    ${contributing}
-
-    ## Tests
-    ${tests}
-
-    ## questions
-    *Github: ${username}
-    *Email: ${email}`
+## Description
+${description}
+## Table of Contents
+${table}
+## Installation
+${installation}
+## Usage
+${usage}
+## License
+${license}
+## Credits
+${contributing}
+## Tests
+${tests}
+## Questions
+Github: ${username}
+Email: ${email}`
 
     writeToFile(title, template);
 }
 )
-
+// This function creates a file with the user's file name and removes the spaces in the title and makes it all lower case
+// if the readme is not generated, it logs the error message
 function writeToFile(fileName, data) {
     fs.writeFile(`./${fileName.toLowerCase().split(' ').join('')}.md`, data, err => {
         if (err) {
