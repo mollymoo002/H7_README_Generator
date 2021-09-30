@@ -49,6 +49,6 @@ SOFTWARE.
 
 ## Questions
 
-Github username: mollymoo002
-Email: mollysingmaster@gmail.com
+- Github username: mollymoo002
+- Email: mollysingmaster@gmail.com
 
