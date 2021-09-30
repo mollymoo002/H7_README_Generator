@@ -119,7 +119,7 @@ const template = `${title}
     ## License
     ${license}
 
-    ## Contribution
+    ## Credits
     ${contributing}
 
     ## Tests
@@ -129,12 +129,12 @@ const template = `${title}
     *Github: ${username}
     *Email: ${email}`
 
-    
+    writeToFile(title, template);
 }
 )
 
 function writeToFile(fileName, data) {
-    fs.writeFile(filename, data, err => {
+    fs.writeFile(`./${fileName.toLowerCase().split(' ').join('')}.md`, data, err => {
         if (err) {
             return console.log(err);
         }
