@@ -16,13 +16,13 @@ This readme generator allows a user to create a professional readme for use in c
 ## Usage
 Follow the question prompts to generate the readme and make sure to be as descriptive as possible
 
-   ![Walkthrough Video](assets/images/screenshot.png)
+   ![Walkthrough Video](https://drive.google.com/drive/folders/1WpY1xSqkQHm7ywdG_c42v9Zd2Q0c3dq_?usp=sharing)
 
 
 ## Credits
 - Instructors
 - Ask BCS
-- Javier Perez: https://www.youtube.com/watch?v=2VUQABoFOqw
+- Javier Perez: (https://www.youtube.com/watch?v=2VUQABoFOqw)
 
 ## License
 MIT License
