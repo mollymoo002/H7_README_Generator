@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mollymoo002/H7_README_Generator/issues"
   },
-  "homepage": "https://github.com/mollymoo002/H7_README_Generator#readme"
+  "homepage": "https://github.com/mollymoo002/H7_README_Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.5"
+  }
 }
