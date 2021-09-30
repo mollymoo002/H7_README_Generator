@@ -13,6 +13,8 @@ This readme generator allows a user to create a professional readme for use in c
 - run this command to install inquirer: npm install inquirer
 - run the file: node index.js
 
+- Github repo: https://github.com/mollymoo002/H7_README_Generator
+
 ## Usage
 Follow the question prompts to generate the readme and make sure to be as descriptive as possible
 
@@ -48,6 +50,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Questions
+
+[![Photo of Molly](media/Molly-photo.jpg)]
 
 - Github username: mollymoo002
 - Email: mollysingmaster@gmail.com
