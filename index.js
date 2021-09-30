@@ -54,6 +54,7 @@ const questions = [
         type: 'list',
         message: 'License information (optional)',
         name: 'License',
+        choices: ['The MIT License', 'The GPL license', 'Apache license', 'GNU license', 'N/A'],
       },
       {
         type: 'input',
@@ -69,7 +70,7 @@ const questions = [
       {
         type: 'input',
         message: 'Please enter Github username',
-        name: 'Questions',
+        name: 'username',
         validate: (value)=> {if (value) {return true} else {return 'Please enter your username'}},
         default: 'mollymoo002',
       },
@@ -81,7 +82,56 @@ const questions = [
       },
 ];
 inquirer.prompt(questions)
+.then (({
+    title,
+    description,
+    table,
+    installation,
+    usage,
+    license,
+    contributing,
+    tests,
+    username,
+    email
+}) => {
+    // README template
+const template = `${title}
+    *[description][#description]
+    *[table][#table of contents]
+    *[installation][#installation]
+    *[usage][#usage]
+    *[license][#license]
+    *[contributing][#contributors]
+    *[tests][#tests]
 
+    ## Description
+    ${description}
+
+    ## Table of Contents
+    ${table}
+
+    ## Installation
+    ${installation}
+
+    ## Usage
+    ${usage}
+
+    ## License
+    ${license}
+
+    ## Contribution
+    ${contributing}
+
+    ## Tests
+    ${tests}
+
+    ## questions
+    *Github: ${username}
+    *Email: ${email}`
+
+    
+}
+)
 
 function writeToFile(fileName, data) {
     fs.writeFile(filename, data, err => {
