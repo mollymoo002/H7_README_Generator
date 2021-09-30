@@ -16,7 +16,7 @@ This readme generator allows a user to create a professional readme for use in c
 ## Usage
 Follow the question prompts to generate the readme and make sure to be as descriptive as possible
 
-   ![Walkthrough Video](https://drive.google.com/drive/folders/1WpY1xSqkQHm7ywdG_c42v9Zd2Q0c3dq_?usp=sharing)
+   [![Walkthrough Video](media/Capture.JPG)](https://drive.google.com/drive/folders/1WpY1xSqkQHm7ywdG_c42v9Zd2Q0c3dq_?usp=sharing)
 
 
 ## Credits
