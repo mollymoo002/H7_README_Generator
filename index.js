@@ -36,11 +36,6 @@ const questions = [
       },
       {
         type: 'input',
-        message: 'Please include a table of contents (optional)',
-        name: 'table',
-      },
-      {
-        type: 'input',
         message: 'How to install the application (optional)',
         name: 'installation',
       },
@@ -85,7 +80,6 @@ inquirer.prompt(questions)
 .then (({
     title,
     description,
-    table,
     installation,
     usage,
     license,
@@ -95,12 +89,17 @@ inquirer.prompt(questions)
     email
 }) => {
     // README template
-const template = `##$ {title}
+const template = `## ${title}
 
 ## Description
 ${description}
 ## Table of Contents
-${table}
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Tests](#tests)
+- [Questions](#questions)
 ## Installation
 ${installation}
 ## Usage
