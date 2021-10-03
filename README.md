@@ -20,6 +20,8 @@ Follow the question prompts to generate the readme and make sure to be as descri
 
    [![Walkthrough Video](media/Capture.JPG)](https://drive.google.com/drive/folders/1WpY1xSqkQHm7ywdG_c42v9Zd2Q0c3dq_?usp=sharing)
 
+- https://drive.google.com/drive/folders/1WpY1xSqkQHm7ywdG_c42v9Zd2Q0c3dq_?usp=sharing
+
 
 ## Credits
 - Instructors
@@ -30,7 +32,7 @@ Follow the question prompts to generate the readme and make sure to be as descri
 MIT License
 
 Copyright (c) [2021] [Molly-Singmaster]
-
+ 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -53,6 +55,6 @@ SOFTWARE.
 
 ![Photo of Molly](media/Molly-photo.jpg)
 
-- Github username: mollymoo002
+- Github username: mollymoo002 https://github.com/mollymoo002
 - Email: mollysingmaster@gmail.com
 
